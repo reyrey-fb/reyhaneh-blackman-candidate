@@ -1,0 +1,60 @@
+
+/* incorporating font document-wide */
+
+@font-face {
+  font-family: "OpenSans-Bold", sans-serif;
+  src: local("Open Sans"), 
+        url("./fonts/OpenSans-Bold.ttf") 
+        format("truetype");
+  font-weight: bold;
+}
+
+html {
+  margin: 0;
+  font-family: "OpenSans-Bold", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: bold;
+}
+
+/* setting font responsiveness at different screen breakpoints */
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 23px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  html {
+    font-size: 20.5px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 17.5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  html {
+    font-size: 23px;
+  }
+}
+
+
+
+

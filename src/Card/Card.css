@@ -1,0 +1,126 @@
+@import "../index.css";
+
+/*styling for card component*/
+
+.card {
+    font-family: "OpenSans-Bold", sans-serif;
+    border-radius: 4px;
+    -webkit-box-shadow:0 1px 2px 0 rgba(46,49,52,0.40);
+    -moz-box-shadow: 0 1px 2px 0 rgba(46,49,52,0.40);
+    box-shadow: 0 1px 2px 0 rgba(46,49,52,0.40);  
+    transition: all .2s ease-in-out;
+}
+
+h5, .card-title {
+    font-size: 1em;
+    color: #35383C;
+    letter-spacing: 0.3px;
+    text-align: left;
+    line-height: 20px;
+}
+
+p, .card-text {
+    font-size: 0.625em;
+    color: #2E3134;
+    letter-spacing: 0.3px;
+    line-height: 12px;
+}
+
+.thumbnail {
+    float: right;
+}
+
+/*styling for card overlay on hover*/
+
+.card-image {
+  position: relative;
+}
+
+.card-image .card-overlay {
+  background: rgba(0,12,40,0.54);
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  left: 65%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.card-image:hover .card-overlay{
+  opacity: 0.9;
+  left:65%;
+}
+
+.card-overlay-content {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 82.5%;
+  opacity: 0;
+  line-height: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.card-image:hover .card-overlay-content{
+  top: 50%;
+  left: 82.5%;
+  opacity: 1;
+}
+
+.card-overlay-content h4{
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+
+.card-overlay-content p{
+  color: #fff;
+  font-size: 0.625em;
+  letter-spacing: 0.3px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+
+.fadeIn-right{
+  left: 82.5%;
+}
+
+/*conditional styling for active card*/
+
+.active {
+    -webkit-box-shadow:0px 7px 12px 0px rgba(46,49,52,0.30);
+    -moz-box-shadow: 0px 7px 12px 0px rgba(46,49,52,0.30);
+    box-shadow: 0px 7px 12px 0px rgba(46,49,52,0.30);
+}
+
+.view-details {
+    color: #0069D2;
+    font-size: 0.875em;
+    letter-spacing: 0.5px;
+    line-height: 16px;
+    padding-top: 0.8em;
+    text-transform: uppercase;
+}
+
+/* animation to create card pulse */
+
+.card:hover {
+    transform: scale(1.02);	
+}
+
+
+
+
+
